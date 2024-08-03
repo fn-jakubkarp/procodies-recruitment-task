@@ -1,9 +1,28 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
 
+const config = {
+    content: [
+        './pages/**/*.{ts,tsx}',
+        './components/**/*.{ts,tsx}',
+        './app/**/*.{ts,tsx}',
+        './src/**/*.{ts,tsx}',
+    ],
+    theme: {
+        extend: {
+            fontFamily: {
+                josefin: ['Josefin Sans'],
+                open: ['Open Sans'],
+            },
+            colors: {
+                secondary: {
+                    DEFAULT: '#eae6e0',
+                },
+                text: {
+                    DARK: '#64554F',
+                },
+            },
+        },
+    },
+};
+
+export default config;

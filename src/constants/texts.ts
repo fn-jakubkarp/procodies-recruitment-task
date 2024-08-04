@@ -1,7 +1,7 @@
 export const texts = {
-    header: {
-        intro: 'Chance to win a StockX Mystery Box today!',
-        subIntro: 'Unleash the Excitement of Mystery Electronics',
+    hero: {
+        header: 'Chance to win a StockX Mystery Box today!',
+        subheader: 'Unleash the Excitement of Mystery Electronics',
     },
     featureSection: {
         header: 'Top Tech Mystery Box at Unbeatable Prices',

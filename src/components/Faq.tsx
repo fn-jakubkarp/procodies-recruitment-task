@@ -1,10 +1,17 @@
-import React from 'react';
+import { cn } from '@/utils/twMerge';
+
 import { texts } from '@/constants/texts';
 
-const Faq: React.FC = () => {
+interface FaqProps {
+    className?: string;
+}
+
+const Faq: React.FC<FaqProps> = ({ className }) => {
     return (
         <>
-            <section className="flex bg-secondary gap-8 max-w-[1232px] mx-auto">
+            <section
+                className={cn('flex bg-secondary gap-8 mx-auto', className)}
+            >
                 <div className="flex flex-col gap-1">
                     <h3 className="text-sm font-bold">
                         {texts.faqSection.firstQuestion}

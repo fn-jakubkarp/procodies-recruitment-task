@@ -1,4 +1,4 @@
-import React from 'react';
+import { cn } from '@/utils/twMerge';
 
 interface SectionProps {
     src?: string;
@@ -7,6 +7,7 @@ interface SectionProps {
     firstParagraph?: string;
     secondParagraph?: string;
     reverseLayout?: boolean;
+    className?: string;
 }
 
 const Section: React.FC<SectionProps> = ({
@@ -15,6 +16,7 @@ const Section: React.FC<SectionProps> = ({
     header,
     firstParagraph,
     secondParagraph,
+    className,
     reverseLayout = false,
 }) => {
     const imageElement = src && (
@@ -22,22 +24,27 @@ const Section: React.FC<SectionProps> = ({
             <img
                 src={src}
                 alt={alt || 'About section image'}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover rounded-[1.875rem]"
+                draggable="false"
             />
         </div>
     );
 
     const contentElement = (
         <div className="w-1/2 flex flex-col justify-center">
-            {header && <h2 className="text-xl font-bold">{header}</h2>}
-            {firstParagraph && <p className="mt-2">{firstParagraph}</p>}
-            {secondParagraph && <p className="mt-2">{secondParagraph}</p>}
+            {header && <h2 className="text-xl font-bold mb-6">{header}</h2>}
+            {firstParagraph && <p className="mb-8">{firstParagraph}</p>}
+            {secondParagraph && <p className="">{secondParagraph}</p>}
         </div>
     );
 
     return (
         <article
-            className={`flex gap-4 ${reverseLayout ? 'flex-row' : 'flex-row-reverse'}`}
+            className={cn(
+                'flex gap-8',
+                reverseLayout ? 'flex-row' : 'flex-row-reverse',
+                className,
+            )}
         >
             {imageElement}
             {contentElement}

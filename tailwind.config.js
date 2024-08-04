@@ -10,16 +10,13 @@ const config = {
     theme: {
         extend: {
             fontFamily: {
-                josefin: ['Josefin Sans'],
-                open: ['Open Sans'],
+                roboto: ['Roboto'],
             },
             colors: {
-                secondary: {
-                    DEFAULT: '#eae6e0',
-                },
-                text: {
-                    DARK: '#64554F',
-                },
+                primary: '#293632',
+                secondary: '#F5F5F5',
+                header: '#2D473E',
+                accent: '#006340',
             },
         },
     },

@@ -14,7 +14,8 @@ body {
     @apply text-primary;
 }
 
-h1 {
+h1,
+header {
     @apply text-header;
 }
 

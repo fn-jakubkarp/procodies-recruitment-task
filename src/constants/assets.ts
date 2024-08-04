@@ -8,7 +8,7 @@ import products_tb_1 from '@/assets/products_tb_1.png';
 import products_tb_2 from '@/assets/products_tb_2.png';
 import products_tb_3 from '@/assets/products_tb_3.png';
 
-export {
+export const assets = {
     bit256_badge,
     footer_cards,
     mcafree_badge,

@@ -4,7 +4,7 @@ export const texts = {
         subIntro: 'Unleash the Excitement of Mystery Electronics',
     },
     featureSection: {
-        tagline: 'Top Tech Mystery Box at Unbeatable Prices',
+        header: 'Top Tech Mystery Box at Unbeatable Prices',
         features:
             'Fast shipping | Easy returns | Special discounts for students',
     },

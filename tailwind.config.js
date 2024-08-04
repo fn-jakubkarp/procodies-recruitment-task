@@ -17,6 +17,11 @@ const config = {
                 secondary: '#F5F5F5',
                 header: '#2D473E',
                 accent: '#006340',
+                gray: {
+                    light: '#DBDBDB',
+                    medium: '#ADADAD',
+                    dark: '#808080',
+                },
             },
         },
     },

@@ -45,8 +45,10 @@ const Section: React.FC<SectionProps> = ({
     return (
         <article
             className={cn(
-                'flex gap-8',
-                reverseLayout ? 'flex-row' : 'flex-row-reverse',
+                'flex gap-8 justify-center items-center',
+                reverseLayout
+                    ? 'flex-col lg:flex-row'
+                    : 'flex-col-reverse lg:flex-row-reverse',
                 className,
             )}
         >

@@ -10,25 +10,31 @@ const Faq: React.FC<FaqProps> = ({ className }) => {
     return (
         <>
             <section
-                className={cn('flex bg-secondary gap-8 mx-auto', className)}
+                className={cn('flex bg-secondary gap-8 px-4 py-4', className)}
             >
-                <div className="flex flex-col gap-1">
-                    <h3 className="text-sm font-bold">
+                <div className="flex-1 flex-col gap-1">
+                    <h3 className="text-xs font-semibold">
                         {texts.faqSection.firstQuestion}
                     </h3>
-                    <p className="text-xs">{texts.faqSection.firstAnswer}</p>
+                    <p className="text-[0.625rem]">
+                        {texts.faqSection.firstAnswer}
+                    </p>
                 </div>
-                <div className="flex flex-col gap-1">
-                    <h3 className="text-sm font-bold">
+                <div className="flex-1 flex-col gap-1">
+                    <h3 className="text-xs font-semibold">
                         {texts.faqSection.secondQuestion}
                     </h3>
-                    <p className="text-xs">{texts.faqSection.secondAnswer}</p>
+                    <p className="text-[0.625rem]">
+                        {texts.faqSection.secondAnswer}
+                    </p>
                 </div>
-                <div className="flex flex-col gap-1">
-                    <h3 className="text-sm font-bold">
+                <div className="flex-1 flex-col gap-1">
+                    <h3 className="text-xs font-semibold">
                         {texts.faqSection.thirdQuestion}
                     </h3>
-                    <p className="text-xs">{texts.faqSection.thirdAnswer}</p>
+                    <p className="text-[0.625rem]">
+                        {texts.faqSection.thirdAnswer}
+                    </p>
                 </div>
             </section>
         </>

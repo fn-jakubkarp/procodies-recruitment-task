@@ -32,9 +32,13 @@ const Section: React.FC<SectionProps> = ({
 
     const contentElement = (
         <div className="w-1/2 flex flex-col justify-center">
-            {header && <h2 className="text-xl font-bold mb-6">{header}</h2>}
-            {firstParagraph && <p className="mb-8">{firstParagraph}</p>}
-            {secondParagraph && <p className="">{secondParagraph}</p>}
+            {header && (
+                <h2 className="text-[2.625rem] font-bold mb-6 text-primary">
+                    {header}
+                </h2>
+            )}
+            {firstParagraph && <p className="mb-2">{firstParagraph}</p>}
+            {secondParagraph && <p>{secondParagraph}</p>}
         </div>
     );
 

@@ -12,6 +12,7 @@ body {
     margin: 0;
     @apply font-roboto;
     @apply text-primary;
+    scroll-behavior: smooth;
 }
 
 h1,
